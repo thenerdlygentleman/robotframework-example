@@ -1,3 +1,3 @@
-# Template
+# RobotFramework Examples
 
-Template repository.
+Collection of RobotFramework examples.

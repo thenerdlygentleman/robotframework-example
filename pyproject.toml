@@ -1,7 +1,29 @@
 [project]
-name = "template"
+name = "robotframework-examples"
 version = "0.1.0"
-description = "Add your description here"
+description = "RobotFramwork examples"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "robotframework-appiumlibrary==2.0.0",
+    "robotframework-browser==18.5.1",
+    "robotframework-doctestlibrary==0.20.0",
+    "robotframework-ocrlibrary==2.0.0",
+    "robotframework-pabot==2.18.0",
+    "robotframework-sshlibrary==3.8.0",
+    "robotframework==7.0",
+    "typer==0.12.5",
+]
+
+[tool.robotframework]
+console = "verbose"
+consolecolors = "on"
+pythonpath = "src"
+
+[tool.robotidy]
+diff = true
+indent = 4
+line-length = 80
+overwrite = false
+spacecount = 4
+src = ["."]
